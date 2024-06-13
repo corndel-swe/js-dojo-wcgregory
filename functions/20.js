@@ -11,7 +11,6 @@ export function ticketPrice(age, isMember) {
   // Prices: $8 for children (under 18), $10 for adults, $6 for seniors (65+)
   // Members get a $2 discount
   let price = 0
-  let totalPrice = 0
   const currency = '$'
 
   if (age < 18) {
@@ -22,9 +21,11 @@ export function ticketPrice(age, isMember) {
     price = 6
   }
 
+  const totalPrice = price
+  
   if (isMember) {
-    return totalPrice = price - 2
+    return totalPrice - 2
+  } else {
+    return totalPrice
   }
-
-  return totalPrice = price
 }
