@@ -20,12 +20,10 @@ export function ticketPrice(age, isMember) {
   } else {
     price = 6
   }
-
-  const totalPrice = price
   
   if (isMember) {
-    return totalPrice - 2
-  } else {
-    return totalPrice
+    price -= 2
   }
+
+  return price
 }
