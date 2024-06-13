@@ -7,13 +7,13 @@
  */
 export function dayType(day) {
   // TODO: Return 'Weekday' for Monday to Friday, and 'Weekend' for Saturday and Sunday
-  const weekDay = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+  const weekEnd = ['Saturday', 'Sunday']
   
-  for (let indx = 0; indx < weekDay.length; indx++) {
-    if (day === weekDay[indx]) {
-      return 'Weekday'
+  for (let indx = 0; indx < weekEnd.length; indx++) {
+    if (day === weekEnd[indx]) {
+      return 'Weekend'
     }
   }
 
-  return 'Weekend'
+  return 'Weekday'
 }
