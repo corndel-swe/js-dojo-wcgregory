@@ -7,4 +7,9 @@
  */
 export function isEven(num) {
   // TODO: Return true if num is divisible by 2
+  if (num % 2 === 0) {
+    return true
+  } else {
+    return false
+  }
 }
