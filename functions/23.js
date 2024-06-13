@@ -11,4 +11,8 @@ export function determineSeason(month) {
   // Spring: March (3), April (4), May (5)
   // Summer: June (6), July (7), August (8)
   // Autumn: September (9), October (10), November (11)
+  if (month === 12 || month < 3) return 'Winter'
+  if (month >= 3 && month < 6) return 'Spring'
+  if (month >= 6 && month < 9) return 'Summer'
+  return 'Autumn'
 }
