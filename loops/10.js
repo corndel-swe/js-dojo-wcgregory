@@ -14,4 +14,11 @@ export function stringOfNums(num) {
   // TODO: Add the next digit to the end of the result.
   // TODO: Continue the loop until all digits are processed.
   // TODO: Return the string.
+  let numToString = ''
+
+  for (let digit = 1; digit <= num; digit++) {
+    numToString += String(digit)
+  }
+
+  return numToString
 }
