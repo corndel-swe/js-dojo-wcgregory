@@ -15,15 +15,21 @@ export function calculateInventoryValue(quantities, prices) {
   // TODO: Multiply each quantity by the corresponding price and add it to the total value.
   // TODO: Return the total inventory value.
   let inventoryValue = 0
-
   for (let indx = 0; indx < quantities.length; indx++) {
-    inventoryValue += multiplyBy(quantities[indx], prices[indx])
+    inventoryValue += (quantities[indx] * prices[indx])
     }
-
   return inventoryValue
 }
 
-export function multiplyBy(quantity, price) {
+// export function calculateInventoryValue(quantities, prices) {
+//  let inventoryValue = 0
+//  for (let indx = 0; indx < quantities.length; indx++) {
+    //inventoryValue += multiplyBy(quantities[indx], prices[indx])
+//    }
+//  return inventoryValue
+//}
+//
+//export function multiplyBy(quantity, price) {
   // Simple multiplier function, multiplies an items quantity by it's price
-  return quantity * price
-}
+//  return quantity * price
+//}
