@@ -13,4 +13,11 @@ export function sumArray(arr) {
   // TODO: Use a for loop to iterate over the elements of the array.
   // TODO: Add each element to the sum variable.
   // TODO: Return the sum.
+  let sum = 0
+
+  for (let indx = 0; indx < arr.length; indx++) {
+    sum += arr[indx]
+  }
+
+  return sum
 }

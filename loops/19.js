@@ -14,4 +14,14 @@ export function countPositiveReviews(reviews) {
   // TODO: For each review, check if it is a positive review (4 or 5 stars).
   // TODO: If it is, increment the count.
   // TODO: Return the count of positive reviews.
+  let count = 0
+
+  for (let indx = 0; indx < reviews.length; indx++) {
+  //  if (reviews.filter(stars => stars >= 4)) {count++}
+    if (reviews[indx] >= 4) {
+      count++
+    }
+  }
+
+  return count
 }

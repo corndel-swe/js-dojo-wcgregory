@@ -15,4 +15,11 @@ export function calculateCompoundInterest(principal, rate, periods) {
   // TODO: Use a for loop to iterate over the number of periods.
   // TODO: For each period, multiply the accumulated amount by (1 + rate).
   // TODO: Return the accumulated amount.
+  let accAmount = principal
+
+  for (let value = 0; value < periods; value++) {
+    accAmount = accAmount * (1 + rate)
+  }
+
+  return accAmount
 }

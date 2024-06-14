@@ -15,4 +15,12 @@ export function sumOfDigits(num) {
   // TODO: Remove the last digit from the number.
   // TODO: Continue the loop until all digits are processed.
   // TODO: Return the sum.
+  let sum = 0
+  let numToString = String(num).split('')
+  
+  while (numToString.length) {
+    sum += Number(numToString.pop())
+    }
+
+  return sum
 }

@@ -14,4 +14,15 @@ export function calculateAverage(arr) {
   // TODO: Add each element to the sum variable.
   // TODO: Divide the sum by the number of elements in the array to get the average.
   // TODO: Return the average.
+  let sum = 0
+
+  for (let indx = 0; indx < arr.length; indx++) {
+    sum += arr[indx]
+  }
+  
+  if (arr.length) {
+    return sum / arr.length
+  }
+
+  return sum
 }
