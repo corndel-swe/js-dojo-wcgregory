@@ -10,7 +10,7 @@ export function startSum(prices) {
   // TODO: Get the second element from the array
   // TODO: Return the sum of the first and second elements
   // const firstElement = prices[0]
-  //const secondElement = prices[1]
+  // const secondElement = prices[1]
   // return firstElement + secondElement
   return prices[0] + prices[1]
 }
