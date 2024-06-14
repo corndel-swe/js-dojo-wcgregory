@@ -17,5 +17,5 @@ export function updatePrices(prices, newPrice) {
     .map(newPrices => newPrices * 2)
 }
 
-const whatis = updatePrices([30, 120, 50, 200], 45)
-console.log(whatis)
+// const whatis = updatePrices([30, 120, 50, 200], 45)
+// console.log(whatis)
