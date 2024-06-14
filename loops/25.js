@@ -15,4 +15,14 @@ export function rowSums(arr) {
   // TODO: Use another for loop to iterate over each element in the inner array and add it to the row sum.
   // TODO: Add the row sum to the new array.
   // TODO: Return the new array.
+  const flatArray = Array()
+
+  for (let items of arr) {
+    let sum = 0
+    for (let digit of items) {
+      sum += digit
+    }
+    flatArray.push(sum)
+  }
+  return flatArray
 }
