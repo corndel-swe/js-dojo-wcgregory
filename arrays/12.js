@@ -8,4 +8,5 @@
 export function addHashtags(topics) {
   // TODO: Use the map() method to add a hashtag to each topic
   // TODO: Return the new array of topics with hashtags
+  return topics.map(topic => `#${topic}`)
 }
