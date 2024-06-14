@@ -13,6 +13,6 @@ export function updateFollowers(followerIDs, newFollowerID) {
   // TODO: Return the new array of modified follower IDs
   followerIDs.push(newFollowerID)
   return followerIDs
-    .filter(newFollowerIDs => newFollowerIDs % 2 === 0)
+    .filter(newFollowerIDs => newFollowerIDs % 2 !== 0)
     .map(newFollowerIDs => `ID-${newFollowerIDs}`)
 }
